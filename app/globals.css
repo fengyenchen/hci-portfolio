@@ -146,6 +146,23 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .next-project { padding-block: 65px 90px; }
 .next-project span { font-size: 10px; color: var(--green); font-weight: 800; letter-spacing: .12em; }
 .next-project a { margin-top: 18px; display: flex; justify-content: space-between; align-items: center; font-size: clamp(34px, 5vw, 68px); letter-spacing: -.055em; }
+.experiment-hero h1 { font-size: clamp(72px, 11vw, 152px); }
+.cover-links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: -28px; }
+.cover-links a { padding: 13px 18px; border: 1px solid var(--ink); font-size: 12px; font-weight: 800; transition: .2s ease; }
+.cover-links a:first-child, .cover-links a:hover { background: var(--ink); color: white; }
+.experiment-cover { position: relative; height: min(62vw, 760px); background: #f2f3f0; padding: 48px; }
+.experiment-cover img { object-fit: contain; }
+.experiment-cover figcaption { position: absolute; right: 18px; bottom: 14px; color: var(--muted); font-size: 10px; }
+.experiment-focus ol { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--ink); }
+.experiment-focus li { display: grid; grid-template-columns: 60px 1fr; gap: 18px; padding: 24px 0; border-bottom: 1px solid var(--line); align-items: start; }
+.experiment-focus li span { color: var(--green); font-size: 11px; font-weight: 800; }
+.experiment-focus li p { margin: 0 !important; color: var(--ink) !important; font-size: 17px !important; }
+.stack-band { padding: 90px 0; background: var(--soft); }
+.stack-band ul { list-style: none; padding: 0; margin: 38px 0 0; display: flex; flex-wrap: wrap; gap: 12px; }
+.stack-band li { border: 1px solid var(--ink); border-radius: 999px; padding: 14px 20px; font-size: 14px; font-weight: 700; }
+.accent-violet .eyebrow, .accent-violet .section-index, .accent-violet .experiment-focus li span { color: #6b4ca5; }
+.accent-blue .eyebrow, .accent-blue .section-index, .accent-blue .experiment-focus li span { color: #315fa8; }
+.accent-orange .eyebrow, .accent-orange .section-index, .accent-orange .experiment-focus li span { color: #b94d27; }
 
 @media (max-width: 900px) {
   .wrap, .site-header, .site-footer { width: min(100% - 36px, 1240px); }
@@ -190,10 +207,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .case-hero { padding-top: 35px; }
   .back-link { margin-bottom: 42px; }
   .case-hero h1 { font-size: 75px; }
+  .experiment-hero h1 { font-size: 58px; }
   .make-case .case-hero h1 { font-size: 55px; }
   .case-subtitle { font-size: 24px; margin: 28px 0 45px; }
   .case-wide-image { height: 68vw; }
   .make-wide { height: auto; padding: 25px 12px; }
+  .experiment-cover { height: 78vw; padding: 16px; }
+  .experiment-cover figcaption { display: none; }
   .case-section { padding-block: 88px; }
   .case-section h2 { font-size: 40px; }
   .principles { width: 100%; }

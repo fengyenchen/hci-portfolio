@@ -8,21 +8,21 @@ const experiments = [
     title: "Soul Atelier",
     kind: "3D Web · AI Interaction",
     description: "融合 3D 互動視覺與生成式 AI 的人格探索體驗。",
-    href: "https://soul-atelier.fengyenchen.com",
+    href: "/work/soul-atelier",
   },
   {
     index: "04",
     title: "Pixel Art Generator",
     kind: "Creative Tool · Web",
     description: "支援像素化、手繪編輯、專案儲存與 PNG 匯出的線上創作工具。",
-    href: "https://pixel-art-generator.fengyenchen.com/",
+    href: "/work/pixel-art-generator",
   },
   {
     index: "05",
     title: "R3F Practice",
     kind: "3D Web · Experiment",
     description: "將自製 3D 模型帶進瀏覽器，探索物件、鏡頭與互動的關係。",
-    href: "https://r3f-practice.fengyenchen.com",
+    href: "/work/r3f-practice",
   },
 ];
 
@@ -96,13 +96,13 @@ export default function Home() {
 
         <div className="experiment-list" aria-label="其他作品">
           {experiments.map((item) => (
-            <a key={item.index} href={item.href} target="_blank" rel="noreferrer" className="experiment-row">
+            <Link key={item.index} href={item.href} className="experiment-row">
               <span>{item.index}</span>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
               <em>{item.kind}</em>
               <b aria-hidden="true">↗</b>
-            </a>
+            </Link>
           ))}
         </div>
       </section>
