@@ -25,7 +25,7 @@ export default function Home() {
         </h1>
         <div className="flex items-end justify-between gap-10">
           <p className="m-0 max-w-162.5 text-[clamp(17px,1.65vw,23px)] leading-[1.7] tracking-[-0.02em]">
-            我是馮妍禎，臺大工管系 B12。我在 Web、硬體與空間之間工作，把研究洞察轉化成能被感受、操作與驗證的互動原型。
+            我是<span className="font-bold px-1">馮妍禎</span>，臺大工管系 B12。我在 Web、硬體與空間之間工作，把研究洞察轉化成能被感受、操作與驗證的互動原型。
           </p>
           <a className="hidden size-16.5 shrink-0 place-items-center rounded-full border border-(--ink) text-2xl transition-[color,background-color,transform] duration-300 ease-out hover:translate-y-1 hover:bg-(--ink) hover:text-white focus-visible:translate-y-1 focus-visible:bg-(--ink) focus-visible:text-white sm:grid" href="#work" aria-label="前往作品區">↓</a>
         </div>
@@ -72,7 +72,7 @@ export default function Home() {
           <h2 className="text-[clamp(42px,5.2vw,72px)] font-medium leading-[1.02] tracking-[-0.06em]">技術是媒介，<br />人的感受才是起點。</h2>
           <div className="space-y-6 text-[17px] leading-[1.8] text-[#3f443f]">
             <p>我關心科技如何進入人的身體、空間與日常。比起只把功能做出來，我更在意問題為什麼值得被解決，以及每一次操作會帶來什麼感受。</p>
-            <p>我的跨域背景讓我能參與使用者研究、介面設計、前端開發、Arduino 與硬體原型，並在團隊裡把不同語言接成同一段可被測試的體驗。</p>
+            <p>我的背景讓我能參與使用者研究、介面設計、全端開發、Arduino 與硬體原型，並在團隊裡把不同語言接成同一段可被測試的體驗。</p>
           </div>
           <dl className="m-0">
             {[['Research','Interview · CJM · Synthesis'],['Build','Web · Arduino · IoT'],['Create','Creative Coding · 3D · Figma']].map(([title, detail]) => (
