@@ -2,23 +2,6 @@
 
 人機互動與 Creative Technology 作品集。網站以「把數位邏輯，做成可以摸得到的互動」為主軸，呈現從使用者研究、問題定義，到介面、硬體與實體回饋整合的跨域能力。
 
-## 網站內容
-
-首頁先用兩個完整個案建立主要能力敘事，再以三個 Web／Creative Coding 實驗補充技術廣度：
-
-- **Nooka / OpenHCI '26**：從 7 位使用者訪談收斂辦公室專注與休息問題，發展桌上型互動隔板。個人負責硬體實作、燈光控制與手機端控制功能。
-- **多模組化救災探勘載具 / MakeNTU 2026**：把現場感測、監控判讀與實體任務模組接成完整資訊流。個人負責 IoT 監控、車體與模組電控、千斤頂小車結構設計。
-- **Selected Experiments**：Soul Atelier、Pixel Art Generator、R3F Practice，各自有獨立個案頁，展示 3D Web、AI Interaction 與線上創作工具經驗。
-
-網站包含三個主要路由：
-
-- `/`：定位、精選作品、能力與自我介紹
-- `/work/nooka`：OpenHCI 個案研究與個人貢獻
-- `/work/make-ntu`：MakeNTU 軟硬整合個案
-- `/work/soul-atelier`：3D Web 與 AI Interaction 個案
-- `/work/pixel-art-generator`：線上像素創作工具個案
-- `/work/r3f-practice`：React Three Fiber 3D Web 實驗個案
-
 ## 技術架構
 
 - React 19
@@ -56,23 +39,6 @@ hci-portfolio/
 ├─ package.json
 └─ README.md
 ```
-
-## 更換作品圖片
-
-頁面已經完成圖片容器、比例與響應式裁切。之後只要把新圖片放進 `public/assets/`，並覆蓋同名檔案，不需要修改元件：
-
-| 檔名 | 出現位置 | 建議替換內容 |
-| --- | --- | --- |
-| `nooka-product.JPG` | 首頁 Nooka 主圖、個案首圖 | 最完整、最有情境的產品照片或渲染圖 |
-| `nooka-prototype.png` | Nooka 個案圖庫 | 硬體拆解、線路、製作過程或元件特寫 |
-| `nooka-demo.png` | Nooka 個案圖庫 | 實際操作、展場展示或原型測試照片 |
-| `nooka-app.png` | Nooka 個案圖庫 | 手機控制燈光的介面與操作流程 |
-| `make-ntu.jpg` | 首頁 MakeNTU 主圖、個案首圖 | 救災載具全貌；建議使用橫式實拍圖 |
-| `soul-atelier.png` | Soul Atelier 個案封面 | 3D 場景、人格測驗流程或最具氛圍的操作畫面 |
-| `pixel-art-generator.png` | Pixel Art Generator 個案封面 | 完整編輯器畫面或圖片像素化前後對照 |
-| `r3f-practice.png` | R3F Practice 個案封面 | 3D 模型與瀏覽器場景的代表畫面 |
-
-建議圖片至少 1600px 寬，優先使用 WebP 或壓縮過的 PNG/JPEG。首頁圖片採固定比例裁切，因此主體不要太靠近四周；個案頁可保留較多背景與操作情境。
 
 ## 視覺與內容原則
 
