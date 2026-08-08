@@ -38,9 +38,11 @@ hci-portfolio/
 │  │  ├─ SiteHeader.tsx       # 共用導覽列
 │  │  └─ SiteFooter.tsx       # 共用頁尾
 │  ├─ work/
-│  │  ├─ [slug]/page.tsx      # 三個 Web／Creative Coding 個案頁
-│  │  ├─ nooka/page.tsx       # OpenHCI 個案頁
-│  │  └─ make-ntu/page.tsx    # MakeNTU 個案頁
+│  │  ├─ nooka/page.tsx               # OpenHCI 個案頁
+│  │  ├─ make-ntu/page.tsx            # MakeNTU 個案頁
+│  │  ├─ soul-atelier/page.tsx        # 3D Web 與 AI 個案頁
+│  │  ├─ pixel-art-generator/page.tsx # 線上創作工具個案頁
+│  │  └─ r3f-practice/page.tsx        # 3D Web 實驗個案頁
 │  ├─ globals.css             # Tailwind 匯入與全站顏色變數
 │  ├─ layout.tsx              # 全站語系、SEO 與社群預覽設定
 │  └─ page.tsx                # 首頁
