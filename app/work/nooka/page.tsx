@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { CaseHeader, CaseSection, NextProject, PrincipleGrid, wrap } from "../../components/CaseElements";
+import { CaseHeader, CaseSection, NextProject, PrincipleGrid, eyebrow, wrap } from "../../components/CaseElements";
 import { SiteFooter } from "../../components/SiteFooter";
 import { SiteHeader } from "../../components/SiteHeader";
 
@@ -13,9 +13,16 @@ export default function NookaCaseStudy() {
         { label: "我的角色", value: "硬體實作、燈光控制、手機端控制功能" },
         { label: "方法", value: "訪談、互動設計、快速原型、系統整合" },
         { label: "成果", value: "可展示的桌上型互動原型與控制介面" },
-      ]} />
+      ]}>
+        <div className="flex flex-wrap gap-3">
+          <a className="border border-(--ink) bg-(--ink) px-5 py-3 text-xs font-extrabold text-white hover:bg-white hover:text-(--ink)" href="https://nooka-orpin.vercel.app/" target="_blank" rel="noreferrer">開啟 App Demo ↗</a>
+          <a className="border border-(--ink) px-5 py-3 text-xs font-extrabold hover:border-(--primary) hover:text-(--primary)" href="/assets/nooka.pdf" target="_blank" rel="noreferrer">查看專案簡報 ↗</a>
+          <a className="border border-(--ink) px-5 py-3 text-xs font-extrabold hover:border-(--primary) hover:text-(--primary)" href="https://r3f-practice.fengyenchen.com/screenPage" target="_blank" rel="noreferrer">開啟裝置畫面 ↗</a>
+          <a className="border border-(--ink) px-5 py-3 text-xs font-extrabold hover:border-(--primary) hover:text-(--primary)" href="https://github.com/fengyenchen/nooka" target="_blank" rel="noreferrer">查看 GitHub ↗</a>
+        </div>
+      </CaseHeader>
 
-      <figure className="m-0 h-[68vw] max-h-207.5 w-full overflow-hidden bg-white"><img className="size-full object-cover" src="/assets/nooka-product.JPG" alt="Nooka 安裝於辦公桌上的產品情境" /></figure>
+      <figure className="mx-auto m-0 w-full max-w-310 bg-white px-4 md:px-8"><img className="h-auto w-full" src="/assets/nooka-product.JPG" alt="Nooka 安裝於辦公桌上的產品情境" /></figure>
 
       <CaseSection index="01 / WHY" title={<>休息不是缺少時間，<br />而是缺少安心切換的環境。</>}>
         <p>團隊訪談 7 位在固定座位工作的知識工作者，發現半開放辦公室裡的視覺、聲音與臨時詢問，會持續切斷專注；另一方面，使用者即使想短暫休息，也常因顧慮他人眼光而假裝忙碌。</p>
@@ -40,9 +47,9 @@ export default function NookaCaseStudy() {
         <p>我主要負責實體硬體與手機控制燈光的功能，把團隊定義的專注／休息模式落實成可操作的原型。核心不是單向遙控，而是確保手機端的狀態、控制邏輯與實體燈光維持一致，讓使用者能立即理解目前模式。</p>
         <div className="mt-14 grid items-center gap-4 md:grid-cols-[1fr_auto_1fr_auto_1fr]">
           {[
-            ["1", "手機選擇模式", "Focus / Rest / Available"],
-            ["2", "控制邏輯轉譯", "將介面狀態映射到硬體行為"],
-            ["3", "燈光即時回饋", "讓自己與周圍的人都能理解"],
+            ["01", "手機選擇模式", "Focus / Rest / Available"],
+            ["02", "控制邏輯轉譯", "將介面狀態映射到硬體行為"],
+            ["03", "燈光即時回饋", "讓自己與周圍的人都能理解"],
           ].map((item, index) => <div className="contents" key={item[0]}><div className="flex min-h-38.75 flex-col border border-(--ink) p-5"><span className="text-xs text-(--muted)">{item[0]}</span><b className="mb-2 mt-auto text-[17px]">{item[1]}</b><small className="leading-6 text-(--muted)">{item[2]}</small></div>{index < 2 && <i className="text-center text-xl not-italic max-md:rotate-90">→</i>}</div>)}
         </div>
       </CaseSection>
@@ -51,7 +58,15 @@ export default function NookaCaseStudy() {
         <p>這個專案讓我更確定，HCI 的價值不只在介面是否好看，而在抽象研究洞察能否被轉成一段真實、連續的互動。當手機操作、燈光回饋與辦公情境彼此吻合，使用者才真正感受到「我能掌控這個空間」。</p>
       </CaseSection>
 
-      <NextProject label="下一個個案" href="/work/make-ntu" title="多模組化救災探勘載具" />
+      <section className={`${wrap} py-20 md:py-28`}>
+        <p className={eyebrow}>04 / PROJECT DECK</p>
+        <div className="mt-8 overflow-hidden border border-(--ink) bg-white">
+          <iframe className="h-[70vh] min-h-120 max-h-225 w-full" src="/assets/nooka.pdf#view=FitH" title="Nooka OpenHCI 專案簡報" loading="lazy" />
+        </div>
+        <p className="mt-4 text-sm text-(--muted)">若瀏覽器無法顯示 PDF，可<a className="ml-1 font-bold text-(--ink) underline-offset-4 hover:text-(--primary) hover:underline" href="/assets/nooka.pdf" target="_blank" rel="noreferrer">另開完整簡報 ↗</a></p>
+      </section>
+
+      <NextProject label="繼續瀏覽" href="/#work" title="所有作品" />
     </article>
     <SiteFooter />
   </main>;
