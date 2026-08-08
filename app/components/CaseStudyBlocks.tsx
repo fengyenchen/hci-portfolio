@@ -19,7 +19,7 @@ export function CaseHero({ label, title, subtitle, meta, links = [], compact = f
 }
 
 export function CaseLinks({ links }: { links: CaseLink[] }) {
-  return <div className="flex flex-wrap gap-3">{links.map((link) => <a className={link.primary ? "border border-(--ink) bg-(--ink) px-5 py-3 text-xs font-extrabold text-white hover:bg-white hover:text-(--ink)" : "border border-(--ink) px-5 py-3 text-xs font-extrabold hover:border-(--primary) hover:text-(--primary)"} href={link.href} target="_blank" rel="noreferrer" key={`${link.label}-${link.href}`}>{link.label} ↗</a>)}</div>;
+  return <div className="flex flex-wrap gap-3">{links.map((link) => <a className={`${link.primary ? "border-(--ink) bg-(--ink) text-white hover:bg-white hover:text-(--ink) focus-visible:bg-white focus-visible:text-(--ink)" : "border-(--ink) hover:border-(--primary) hover:text-(--primary) focus-visible:border-(--primary) focus-visible:text-(--primary)"} border px-5 py-3 text-xs font-extrabold transition-colors duration-300 ease-out`} href={link.href} target="_blank" rel="noreferrer" key={`${link.label}-${link.href}`}>{link.label} ↗</a>)}</div>;
 }
 
 export function CaseCover({ src, alt, caption }: { src: string; alt: string; caption?: string }) {
@@ -55,5 +55,5 @@ export function FlowSteps({ items }: { items: GridItem[] }) {
 }
 
 export function ProjectDeck({ index, src, title }: { index: string; src: string; title: string }) {
-  return <section className={`${wrap} py-20 md:py-28`}><p className={eyebrow}>{index}</p><div className="mt-8 overflow-hidden border border-(--ink) bg-white"><iframe className="h-[70vh] min-h-120 max-h-225 w-full" src={`${src}#view=FitH`} title={title} loading="lazy" /></div><p className="mt-4 text-sm text-(--muted)">若瀏覽器無法顯示 PDF，可<a className="ml-1 font-bold text-(--ink) underline-offset-4 hover:text-(--primary) hover:underline" href={src} target="_blank" rel="noreferrer">另開完整簡報 ↗</a></p></section>;
+  return <section className={`${wrap} py-20 md:py-28`}><p className={eyebrow}>{index}</p><div className="mt-8 overflow-hidden border border-(--ink) bg-white"><iframe className="h-[70vh] min-h-120 max-h-225 w-full" src={`${src}#view=FitH`} title={title} loading="lazy" /></div><p className="mt-4 text-sm text-(--muted)">若瀏覽器無法顯示 PDF，可<a className="ml-1 font-bold text-(--ink) underline-offset-4 transition-colors duration-300 ease-out hover:text-(--primary) hover:underline focus-visible:text-(--primary) focus-visible:underline" href={src} target="_blank" rel="noreferrer">另開完整簡報 ↗</a></p></section>;
 }

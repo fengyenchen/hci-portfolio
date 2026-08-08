@@ -2,12 +2,12 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 export const wrap = "mx-auto w-full max-w-310 px-4 md:px-8";
-export const eyebrow = "text-[11px] font-extrabold uppercase tracking-[0.14em] text-(--primary)";
+export const eyebrow = "text-[10px] font-extrabold uppercase tracking-[0.14em] text-(--primary)";
 
 export function CaseHeader({ label, title, subtitle, meta, children, compact = false }: { label: string; title: ReactNode; subtitle: string; meta?: { label: string; value: string }[]; children?: ReactNode; compact?: boolean }) {
   return (
     <header className={`${wrap} py-10 md:py-14`}>
-      <Link className="mb-12 inline-block text-[13px] font-bold hover:text-(--primary) md:mb-14" href="/#work">← 所有作品</Link>
+      <Link className="mb-12 inline-block text-[13px] font-bold transition-colors duration-300 ease-out hover:text-(--primary) focus-visible:text-(--primary) md:mb-14" href="/#work">← 所有作品</Link>
       <p className={eyebrow}>{label}</p>
       <h1 className={`my-7 font-semibold leading-[0.9] tracking-[-0.075em] ${compact ? "text-[clamp(55px,9vw,128px)]" : "text-[clamp(72px,13vw,186px)]"}`}>{title}</h1>
       <p className="my-8 max-w-212.5 text-[clamp(22px,3vw,40px)] leading-[1.35] tracking-[-0.035em] md:my-14">{subtitle}</p>
@@ -38,5 +38,5 @@ export function PrincipleGrid({ items }: { items: { title: string; text: string 
 }
 
 export function NextProject({ label, href, title }: { label: string; href: string; title: string }) {
-  return <nav className={`${wrap} py-16 md:pb-24`} aria-label={label}><span className={eyebrow}>{label}</span><Link className="mt-4 flex items-center justify-between text-[clamp(34px,5vw,68px)] font-medium tracking-[-0.055em]" href={href}>{title}<b>↗</b></Link></nav>;
+  return <nav className={`${wrap} py-16 md:pb-24`} aria-label={label}><span className={eyebrow}>{label}</span><Link className="group mt-4 flex items-center justify-between text-[clamp(34px,5vw,68px)] font-medium tracking-[-0.055em] transition-colors duration-300 ease-out hover:text-(--primary) focus-visible:text-(--primary)" href={href}>{title}<b className="transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:-translate-y-1 group-focus-visible:translate-x-1 group-focus-visible:-translate-y-1 motion-reduce:transform-none motion-reduce:transition-none">↗</b></Link></nav>;
 }

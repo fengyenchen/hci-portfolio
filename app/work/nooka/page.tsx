@@ -11,7 +11,7 @@ const meta = [
 
 export default function NookaCaseStudy() {
   return <CaseStudyShell>
-    <CaseHero label="OpenHCI '26 / 7-person team / 2026" title="Nooka" subtitle="當家具學會照顧你：對抗資訊過載的辦公室身心互動裝置。" meta={meta} links={[
+    <CaseHero label="OpenHCI '26 / 7-person team" title="Nooka" subtitle="當家具學會照顧你：對抗資訊過載的辦公室身心互動裝置。" meta={meta} links={[
       { label: "開啟 App Demo", href: "https://nooka-orpin.vercel.app/", primary: true },
       { label: "查看專案簡報", href: "/assets/nooka.pdf" },
       { label: "開啟裝置畫面", href: "https://r3f-practice.fengyenchen.com/screenPage" },

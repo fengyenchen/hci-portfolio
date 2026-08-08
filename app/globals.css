@@ -8,3 +8,9 @@
   --muted: #626862;
   --primary: #2f6b4f;
 }
+
+@keyframes ticker-left {
+  to {
+    transform: translateX(-50%);
+  }
+}
