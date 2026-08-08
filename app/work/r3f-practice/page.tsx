@@ -16,7 +16,6 @@ const project: CreativeProject = {
   liveUrl: "https://r3f-practice.fengyenchen.com",
   githubUrl: "https://github.com/fengyenchen/R3F-practice",
   accent: "text-[#b94d27]",
-  surface: "bg-[#fbf0eb]",
 };
 
 export default function R3fPracticePage() { return <CreativeCase project={project} />; }

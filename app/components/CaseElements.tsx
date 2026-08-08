@@ -19,13 +19,13 @@ export function CaseHeader({ label, title, subtitle, meta, children, compact = f
   );
 }
 
-export function CaseSection({ index, title, children, dark = false }: { index: string; title: ReactNode; children: ReactNode; dark?: boolean }) {
+export function CaseSection({ index, title, children }: { index: string; title: ReactNode; children: ReactNode }) {
   return (
-    <section className={`${dark ? "w-full bg-[var(--green)] px-4 text-white md:px-[max(2rem,calc((100%-1240px)/2))]" : `${wrap} border-b border-[var(--ink)]`} grid gap-8 py-20 md:grid-cols-[1fr_2fr] md:gap-14 md:py-32`}>
-      <p className={`mt-2 text-[10px] font-extrabold tracking-[0.13em] ${dark ? "text-[#cfe7d6]" : "text-[var(--green)]"}`}>{index}</p>
+    <section className={`${wrap} grid gap-8 border-b border-[var(--ink)] bg-white py-20 md:grid-cols-[1fr_2fr] md:gap-14 md:py-32`}>
+      <p className="mt-2 text-[10px] font-extrabold tracking-[0.13em] text-[var(--green)]">{index}</p>
       <div>
         <h2 className="mb-10 text-[clamp(40px,5.2vw,72px)] font-medium leading-[1.08] tracking-[-0.055em]">{title}</h2>
-        <div className={`max-w-[780px] space-y-5 text-[17px] leading-[1.85] ${dark ? "text-[#edf6ef]" : "text-[#3d433e]"}`}>{children}</div>
+        <div className="max-w-[780px] space-y-5 text-[17px] leading-[1.85] text-[#3d433e]">{children}</div>
       </div>
     </section>
   );

@@ -15,7 +15,6 @@ export type CreativeProject = {
   liveUrl: string;
   githubUrl: string;
   accent: string;
-  surface: string;
 };
 
 export function CreativeCase({ project }: { project: CreativeProject }) {
@@ -29,7 +28,7 @@ export function CreativeCase({ project }: { project: CreativeProject }) {
         </div>
       </CaseHeader>
 
-      <figure className={`relative m-0 h-[78vw] max-h-[760px] w-full p-4 md:h-[62vw] md:p-12 ${project.surface}`}>
+      <figure className="relative m-0 h-[78vw] max-h-[760px] w-full bg-white p-4 md:h-[62vw] md:p-12">
         <img className="size-full object-contain" src={project.image} alt={project.imageAlt} />
         <figcaption className="absolute bottom-3 right-4 hidden text-[10px] text-[var(--muted)] md:block">暫用封面圖；可在 public/assets/ 以同名檔案直接替換。</figcaption>
       </figure>
@@ -47,8 +46,8 @@ export function CreativeCase({ project }: { project: CreativeProject }) {
         </div>
       </section>
 
-      <section className={`py-20 md:py-24 ${project.surface}`}>
-        <div className={wrap}><p className={eyebrow}>TOOLS / STACK</p><ul className="mt-9 flex list-none flex-wrap gap-3 p-0">{project.stack.map((item) => <li className="rounded-full border border-[var(--ink)] bg-white/60 px-5 py-3.5 text-sm font-bold" key={item}>{item}</li>)}</ul></div>
+      <section className="border-b border-[var(--ink)] bg-white py-20 md:py-24">
+        <div className={wrap}><p className={eyebrow}>TOOLS / STACK</p><ul className="mt-9 flex list-none flex-wrap gap-3 p-0">{project.stack.map((item) => <li className="rounded-full border border-[var(--ink)] bg-white px-5 py-3.5 text-sm font-bold" key={item}>{item}</li>)}</ul></div>
       </section>
 
       <NextProject label="繼續瀏覽" href="/#work" title="所有作品" />

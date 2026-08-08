@@ -16,7 +16,6 @@ const project: CreativeProject = {
   liveUrl: "https://pixel-art-generator.fengyenchen.com/",
   githubUrl: "https://github.com/fengyenchen/pixel-art-generator",
   accent: "text-[#315fa8]",
-  surface: "bg-[#edf4fb]",
 };
 
 export default function PixelArtGeneratorPage() { return <CreativeCase project={project} />; }

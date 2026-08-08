@@ -15,7 +15,7 @@ export default function MakeNtuCaseStudy() {
         { label: "成果", value: "企業獎第三名" },
       ]} />
 
-      <figure className="m-0 w-full bg-[#f3f3f3] px-3 py-6 md:px-[5vw] md:py-16"><img className="mx-auto max-h-[830px] w-full object-contain" src="/assets/make-ntu.png" alt="多模組化救災探勘載具完整專案介紹" /></figure>
+      <figure className="m-0 w-full bg-white px-3 py-6 md:px-[5vw] md:py-16"><img className="mx-auto max-h-[830px] w-full object-contain" src="/assets/make-ntu.png" alt="多模組化救災探勘載具完整專案介紹" /></figure>
 
       <CaseSection index="01 / CHALLENGE" title={<>讓人先理解風險，<br />再決定如何行動。</>}>
         <p>災難現場的資訊零散且環境風險高。載具必須代替救災人員進入現場，回傳容易判讀的物理數據，同時依災種快速更換感測或作業模組，從瓦斯偵測、火災到坍方支撐都能使用同一平台。</p>
@@ -27,17 +27,17 @@ export default function MakeNtuCaseStudy() {
         { title: "執行", text: "依據現場決策驅動千斤頂、瓦斯偵測等實體模組。" },
       ]} />
 
-      <section className="grid gap-8 bg-[#282b29] px-4 py-20 text-white md:grid-cols-[1fr_2fr] md:gap-14 md:px-8 md:py-32 xl:px-[calc((100vw-1240px)/2)]">
-        <p className="mt-2 text-[10px] font-extrabold tracking-[0.13em] text-[#f79b72]">02 / MY CONTRIBUTION</p>
+      <section className="mx-auto grid w-[calc(100%-2rem)] max-w-[1240px] gap-8 border-b border-[var(--ink)] bg-white py-20 md:w-[calc(100%-4rem)] md:grid-cols-[1fr_2fr] md:gap-14 md:py-32">
+        <p className="mt-2 text-[10px] font-extrabold tracking-[0.13em] text-[var(--green)]">02 / MY CONTRIBUTION</p>
         <div>
           <h2 className="mb-10 text-[clamp(40px,5.2vw,72px)] font-medium leading-[1.08] tracking-[-0.055em]">把感測、介面與機構，<br />接成一條不中斷的資訊流。</h2>
-          <p className="max-w-[780px] text-[17px] leading-[1.85] text-white/80">我負責 IoT 監控系統、小車與千斤頂／瓦斯偵測模組的電控，以及千斤頂小車的結構設計。我需要同時思考資料是否能穩定回傳、操作者是否看得懂，以及控制指令能否真的驅動機構。</p>
+          <p className="max-w-[780px] text-[17px] leading-[1.85] text-[#3d433e]">我負責 IoT 監控系統、小車與千斤頂／瓦斯偵測模組的電控，以及千斤頂小車的結構設計。我需要同時思考資料是否能穩定回傳、操作者是否看得懂，以及控制指令能否真的驅動機構。</p>
           <ul className="mt-14 list-none p-0">
             {[
               ["01", "IoT 監控", "整合感測資訊與監控介面，支援遠端判讀。"],
               ["02", "電控整合", "完成車體、千斤頂與瓦斯偵測模組的控制。"],
               ["03", "結構設計", "設計千斤頂小車，使實體模組能完成支撐任務。"],
-            ].map((item) => <li className="grid grid-cols-[55px_1fr] border-t border-white/35 py-5" key={item[0]}><span className="text-[11px] text-[#f79b72]">{item[0]}</span><div><b className="text-lg">{item[1]}</b><p className="mt-1 text-sm text-white/70">{item[2]}</p></div></li>)}
+            ].map((item) => <li className="grid grid-cols-[55px_1fr] border-t border-[var(--line)] py-5" key={item[0]}><span className="text-[11px] text-[var(--green)]">{item[0]}</span><div><b className="text-lg">{item[1]}</b><p className="mt-1 text-sm text-[var(--muted)]">{item[2]}</p></div></li>)}
           </ul>
         </div>
       </section>

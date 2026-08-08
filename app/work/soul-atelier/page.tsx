@@ -16,7 +16,6 @@ const project: CreativeProject = {
   liveUrl: "https://soul-atelier.fengyenchen.com",
   githubUrl: "https://github.com/fengyenchen/soul-atelier",
   accent: "text-[#6b4ca5]",
-  surface: "bg-[#f2edf9]",
 };
 
 export default function SoulAtelierPage() { return <CreativeCase project={project} />; }
