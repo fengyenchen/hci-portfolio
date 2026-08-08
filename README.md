@@ -27,6 +27,8 @@
 - Tailwind CSS 4
 - Sites / Cloudflare Workers 相容建置
 
+所有版面與響應式設計都直接使用 Tailwind utilities；`app/globals.css` 僅保留 Tailwind 匯入與全站顏色變數。
+
 ## 資料夾結構
 
 ```text
@@ -39,7 +41,7 @@ hci-portfolio/
 │  │  ├─ [slug]/page.tsx      # 三個 Web／Creative Coding 個案頁
 │  │  ├─ nooka/page.tsx       # OpenHCI 個案頁
 │  │  └─ make-ntu/page.tsx    # MakeNTU 個案頁
-│  ├─ globals.css             # Tailwind、色彩、排版與響應式樣式
+│  ├─ globals.css             # Tailwind 匯入與全站顏色變數
 │  ├─ layout.tsx              # 全站語系、SEO 與社群預覽設定
 │  └─ page.tsx                # 首頁
 ├─ public/
@@ -63,7 +65,6 @@ hci-portfolio/
 | `nooka-prototype.png` | Nooka 個案圖庫 | 硬體拆解、線路、製作過程或元件特寫 |
 | `nooka-demo.png` | Nooka 個案圖庫 | 實際操作、展場展示或原型測試照片 |
 | `nooka-app.png` | Nooka 個案圖庫 | 手機控制燈光的介面與操作流程 |
-| `nooka-scenario.png` | 預留素材 | 使用者情境、燈光狀態切換或測試紀錄 |
 | `make-ntu.png` | 首頁 MakeNTU 主圖、個案首圖 | 救災載具全貌；建議用橫式實拍圖取代目前版面截圖 |
 | `soul-atelier.png` | Soul Atelier 個案封面 | 3D 場景、人格測驗流程或最具氛圍的操作畫面 |
 | `pixel-art-generator.png` | Pixel Art Generator 個案封面 | 完整編輯器畫面或圖片像素化前後對照 |
@@ -74,6 +75,7 @@ hci-portfolio/
 ## 視覺與內容原則
 
 - 白底、深灰文字與低彩度綠色，讓研究脈絡和個人貢獻比裝飾更突出。
+- 首頁五件作品使用完全相同的封面比例、資訊順序與互動方式。
 - 每個個案依「問題 → 設計原則 → 個人貢獻 → 反思」組織，方便老師快速閱讀。
 - 團隊成果與個人工作分開標示，避免模糊實際負責範圍。
 - 手機、平板與桌機皆有對應版面，並尊重 `prefers-reduced-motion`。
