@@ -5,10 +5,9 @@
 ## 技術架構
 
 - React 19
-- Next-compatible App Router（vinext）
-- Vite 8
+- Next.js 16（App Router）
 - Tailwind CSS 4
-- Sites / Cloudflare Workers 相容建置
+- Vercel 零設定部署
 
 所有版面與響應式設計都直接使用 Tailwind utilities；`app/globals.css` 僅保留 Tailwind 匯入與全站顏色變數。
 
@@ -37,10 +36,8 @@ hci-portfolio/
 ├─ public/
 │  ├─ assets/                 # 網站實際使用的專案圖片
 │  └─ og.png                  # 社群分享預覽圖
-├─ .openai/hosting.json       # Sites 專案設定
-├─ build/                     # Sites 建置整合
-├─ worker/                    # Cloudflare Worker 入口
-├─ vite.config.ts             # vinext、Vite 與 Sites 設定
+├─ next.config.ts             # Next.js 設定
+├─ postcss.config.mjs         # Tailwind CSS / PostCSS 設定
 ├─ package.json
 └─ README.md
 ```

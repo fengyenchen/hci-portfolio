@@ -8,8 +8,8 @@ export function SiteHeader() {
           Yen-Chen Feng
         </Link>
         <nav className="flex items-center gap-4 text-xs font-bold md:gap-8" aria-label="主要導覽">
-          <a className="transition-colors duration-300 ease-out hover:text-(--primary) focus-visible:text-(--primary)" href="/#work">作品</a>
-          <a className="hidden transition-colors duration-300 ease-out hover:text-(--primary) focus-visible:text-(--primary) sm:block" href="/#about">關於</a>
+          <Link className="transition-colors duration-300 ease-out hover:text-(--primary) focus-visible:text-(--primary)" href="/#work">作品</Link>
+          <Link className="hidden transition-colors duration-300 ease-out hover:text-(--primary) focus-visible:text-(--primary) sm:block" href="/#about">關於</Link>
           <a className="transition-colors duration-300 ease-out hover:text-(--primary) focus-visible:text-(--primary)" href="https://www.fengyenchen.com" target="_blank" rel="noreferrer">個人網站 ↗</a>
         </nav>
       </div>
