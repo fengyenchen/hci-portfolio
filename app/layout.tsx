@@ -36,7 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-Hant" className="scroll-smooth">
-      <body className="m-0 bg-[var(--paper)] font-sans text-[var(--ink)] antialiased">{children}</body>
+      <body className="m-0 bg-(--paper) font-sans text-(--ink) antialiased">{children}</body>
     </html>
   );
 }

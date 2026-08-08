@@ -15,7 +15,7 @@ export default function NookaCaseStudy() {
         { label: "成果", value: "可展示的桌上型互動原型與控制介面" },
       ]} />
 
-      <figure className="m-0 h-[68vw] max-h-[830px] w-full overflow-hidden bg-white"><img className="size-full object-cover" src="/assets/nooka-product.png" alt="Nooka 安裝於辦公桌上的產品情境" /></figure>
+      <figure className="m-0 h-[68vw] max-h-207.5 w-full overflow-hidden bg-white"><img className="size-full object-cover" src="/assets/nooka-product.JPG" alt="Nooka 安裝於辦公桌上的產品情境" /></figure>
 
       <CaseSection index="01 / WHY" title={<>休息不是缺少時間，<br />而是缺少安心切換的環境。</>}>
         <p>團隊訪談 7 位在固定座位工作的知識工作者，發現半開放辦公室裡的視覺、聲音與臨時詢問，會持續切斷專注；另一方面，使用者即使想短暫休息，也常因顧慮他人眼光而假裝忙碌。</p>
@@ -33,7 +33,7 @@ export default function NookaCaseStudy() {
           ["/assets/nooka-prototype.png", "Nooka 主板、側板與互動元件設計", "硬體構成：可調式主板、吸音側板、燈光與舒壓互動。", true],
           ["/assets/nooka-demo.png", "Nooka 原型產品展示", "可拆裝的桌上型原型，支援不同工作情境。", false],
           ["/assets/nooka-app.png", "Nooka 手機控制介面", "手機端整合模式切換、休息提醒與狀態回顧。", false],
-        ].map(([src, alt, caption, wide]) => <figure className={`m-0 ${wide ? "md:col-span-2" : ""}`} key={String(src)}><img className="w-full bg-white" src={String(src)} alt={String(alt)} /><figcaption className="mt-3 text-xs text-[var(--muted)]">{String(caption)}</figcaption></figure>)}
+        ].map(([src, alt, caption, wide]) => <figure className={`m-0 ${wide ? "md:col-span-2" : ""}`} key={String(src)}><img className="w-full bg-white" src={String(src)} alt={String(alt)} /><figcaption className="mt-3 text-xs text-(--muted)">{String(caption)}</figcaption></figure>)}
       </section>
 
       <CaseSection index="02 / MY CONTRIBUTION" title={<>把手機上的選擇，<br />變成桌面上看得見的燈光。</>}>
@@ -43,7 +43,7 @@ export default function NookaCaseStudy() {
             ["1", "手機選擇模式", "Focus / Rest / Available"],
             ["2", "控制邏輯轉譯", "將介面狀態映射到硬體行為"],
             ["3", "燈光即時回饋", "讓自己與周圍的人都能理解"],
-          ].map((item, index) => <div className="contents" key={item[0]}><div className="flex min-h-[155px] flex-col border border-[var(--ink)] p-5"><span className="text-xs text-[var(--muted)]">{item[0]}</span><b className="mb-2 mt-auto text-[17px]">{item[1]}</b><small className="leading-6 text-[var(--muted)]">{item[2]}</small></div>{index < 2 && <i className="text-center text-xl not-italic max-md:rotate-90">→</i>}</div>)}
+          ].map((item, index) => <div className="contents" key={item[0]}><div className="flex min-h-38.75 flex-col border border-(--ink) p-5"><span className="text-xs text-(--muted)">{item[0]}</span><b className="mb-2 mt-auto text-[17px]">{item[1]}</b><small className="leading-6 text-(--muted)">{item[2]}</small></div>{index < 2 && <i className="text-center text-xl not-italic max-md:rotate-90">→</i>}</div>)}
         </div>
       </CaseSection>
 

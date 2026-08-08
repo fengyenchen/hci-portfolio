@@ -63,11 +63,11 @@ hci-portfolio/
 
 | 檔名 | 出現位置 | 建議替換內容 |
 | --- | --- | --- |
-| `nooka-product.png` | 首頁 Nooka 主圖、個案首圖 | 最完整、最有情境的產品照片或渲染圖 |
+| `nooka-product.JPG` | 首頁 Nooka 主圖、個案首圖 | 最完整、最有情境的產品照片或渲染圖 |
 | `nooka-prototype.png` | Nooka 個案圖庫 | 硬體拆解、線路、製作過程或元件特寫 |
 | `nooka-demo.png` | Nooka 個案圖庫 | 實際操作、展場展示或原型測試照片 |
 | `nooka-app.png` | Nooka 個案圖庫 | 手機控制燈光的介面與操作流程 |
-| `make-ntu.png` | 首頁 MakeNTU 主圖、個案首圖 | 救災載具全貌；建議用橫式實拍圖取代目前版面截圖 |
+| `make-ntu.jpg` | 首頁 MakeNTU 主圖、個案首圖 | 救災載具全貌；建議使用橫式實拍圖 |
 | `soul-atelier.png` | Soul Atelier 個案封面 | 3D 場景、人格測驗流程或最具氛圍的操作畫面 |
 | `pixel-art-generator.png` | Pixel Art Generator 個案封面 | 完整編輯器畫面或圖片像素化前後對照 |
 | `r3f-practice.png` | R3F Practice 個案封面 | 3D 模型與瀏覽器場景的代表畫面 |
